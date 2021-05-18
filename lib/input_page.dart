@@ -29,37 +29,33 @@ class _InputPageState extends State<InputPage> {
           child: Row(
             children: [
               Expanded(
-                child: GestureDetector(
-                  onTap: () {
+                child: ReusableCard(
+                  onPress: () {
                     setState(() {
                       selectedGender = Gender.male;
                     });
                   },
-                  child: ReusableCard(
-                    cardColor: selectedGender == Gender.male
-                        ? activeCardColor
-                        : inactiveCardColor,
-                    cardChild: IconContent(
-                        icon: Icon(FontAwesomeIcons.mars, size: 80),
-                        label: 'MALE'),
-                  ),
+                  cardColor: selectedGender == Gender.male
+                      ? activeCardColor
+                      : inactiveCardColor,
+                  cardChild: IconContent(
+                      icon: Icon(FontAwesomeIcons.mars, size: 80),
+                      label: 'MALE'),
                 ),
               ),
               Expanded(
-                child: GestureDetector(
-                  onTap: () {
+                child: ReusableCard(
+                  onPress: () {
                     setState(() {
                       selectedGender = Gender.female;
                     });
                   },
-                  child: ReusableCard(
-                    cardColor: selectedGender == Gender.female
-                        ? activeCardColor
-                        : inactiveCardColor,
-                    cardChild: IconContent(
-                      icon: Icon(FontAwesomeIcons.venus, size: 80),
-                      label: 'FEMALE',
-                    ),
+                  cardColor: selectedGender == Gender.female
+                      ? activeCardColor
+                      : inactiveCardColor,
+                  cardChild: IconContent(
+                    icon: Icon(FontAwesomeIcons.venus, size: 80),
+                    label: 'FEMALE',
                   ),
                 ),
               )
