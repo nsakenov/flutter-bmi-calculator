@@ -3,6 +3,7 @@
 Body Mass Index Calculator inspired by the beautiful designs made by [Ruben Vaalt](https://dribbble.com/shots/4585382-Simple-BMI-Calculator). It will be a multi screen app with simple functionality but full-on custom styling. 
 
 Demo:
+
 ![Screen Recording 2021-05-19 at 22 57 35](https://user-images.githubusercontent.com/22214915/118884398-af73ce80-b8f6-11eb-8fa1-aef30fc9fa8c.gif)
 
 ## Learning objectives:
